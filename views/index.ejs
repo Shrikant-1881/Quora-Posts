@@ -9,7 +9,11 @@
   <body>
     <h1 style="text-align: center">Quora Posts</h1>
     <br />
-    <a class="btn" id="create_btn" href="http://localhost:8080/posts/new">
+    <a
+      class="btn"
+      id="create_btn"
+      href="https://quora-posts-l9zz.onrender.com//posts/new"
+    >
       Create new Post
     </a>
     <% for (post of posts) { %>
@@ -20,13 +24,13 @@
         <a
           class="btn"
           id="inside_btn"
-          href="http://localhost:8080/posts/<%=post.id%>"
+          href="https://quora-posts-l9zz.onrender.com//posts/<%=post.id%>"
           >See in detail</a
         >
         <a
           class="btn"
           id="inside_btn"
-          href="http://localhost:8080/posts/<%=post.id%>/edit"
+          href="https://quora-posts-l9zz.onrender.com/posts/<%=post.id%>/edit"
           >Edit</a
         >
 
