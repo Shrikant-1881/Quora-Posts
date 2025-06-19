@@ -30,6 +30,9 @@ let posts = [
     content: "India is Great",
   },
 ];
+app.get("/", (req, res) => {
+  res.redirect("/posts");
+});
 
 app.get("/posts", (req, res) => {
   res.render("index.ejs", { posts });
